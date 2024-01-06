@@ -1,0 +1,38 @@
+index.html file: <!Doctype html>
+<html>
+    <head>
+        <title>
+            Fraud Detection Sysyem
+        </title>
+    </head>
+    <body>
+        <center>
+            <h1>
+                Fraud Detection System
+            </h1>
+            <form action="/predict" method="post">
+                <label>Enter the amount :</label>
+                <input type="text" name="fd" id="fd" placeholder="Enter the values here"/>
+                <br/> <br/>
+                <label>Enter OursOfDay : </label>
+                <input type="text" name="fd1" id="fd1" placeholder="Enter the value here"/>
+                <br><br>
+                <label>Enter DayOfWeak : </labek>
+                <input type="text" name="fd2" placeholder="Enter the value here"/>
+                <br><br>
+                <label>Enter the MerchantCategory : </label>
+                <input type="text" name="fd3" placeholder="Enter the value here"/>
+                <br><br>
+                <label>Enter it is international fraud or not : </label>
+                <input type="text" name="fd4" placeholder="Enter the value here"
+                <br><br>
+                <input type="submit" value="Predict"/>
+            </form>
+            <h5>
+            Fraud detection <span style="color: red">{{result}}</span>
+            <span style="color:green">{{result1}}</span>
+               
+            </h5>
+        </center>
+    </body>
+</html>
